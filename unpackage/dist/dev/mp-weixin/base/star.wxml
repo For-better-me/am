@@ -1,1 +1,0 @@
-<view class="flex-center"><block wx:for="{{score}}" wx:for-item="n" wx:for-index="__i0__"><image class="icon_star" src="/static/img/icon_star.png"></image></block><block wx:for="{{5-score}}" wx:for-item="n" wx:for-index="__i1__"><image class="icon_star" src="/static/img/icon_star_white.png"></image></block></view>

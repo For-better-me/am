@@ -1,1 +1,0 @@
-<view><filter-opts bind:filterList="__e" vue-id="8c28c0b4-1" data-event-opts="{{[['^filterList',[['listOpts']]]]}}" bind:__l="__l"></filter-opts><view class="list_wrap mar-t-120"><block wx:for="{{list}}" wx:for-item="item" wx:for-index="__i0__" wx:key="name"><technician-temp vue-id="{{'8c28c0b4-2-'+__i0__}}" info="{{item}}" bind:__l="__l"></technician-temp></block></view></view>

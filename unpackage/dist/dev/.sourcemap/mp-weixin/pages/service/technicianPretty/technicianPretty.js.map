@@ -1,1 +1,0 @@
-{"version":3,"sources":["uni-app:///main.js"],"names":["createPage","Page"],"mappings":";;;;;;;;;;kDAAA;AACA;AACA,qI;AACAA,UAAU,CAACC,yBAAD,CAAV,C","file":"pages/service/technicianPretty/technicianPretty.js","sourcesContent":["import 'uni-pages';\nimport Vue from 'vue'\nimport Page from './pages/service/technicianPretty/technicianPretty.vue'\ncreatePage(Page)"],"sourceRoot":""}

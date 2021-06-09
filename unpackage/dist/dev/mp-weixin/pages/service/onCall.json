@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "上门服务",
-  "usingComponents": {
-    "filter-opts": "/base/filterOpts",
-    "case-temp": "/pages/service/component/caseTemp"
-  }
-}
