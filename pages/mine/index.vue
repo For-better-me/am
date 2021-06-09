@@ -23,7 +23,7 @@
 						<view class="f-26 mar-t-7">关注</view>
 					</view>
 				</view>
-				<view class="sign">
+				<view class="sign" @click="navToPage('/pages/mine/sign')">
 					<image src="../../static/img/icon_sign.png" class="icon_sign"></image>
 					<text class="mar-l-10 f-28 color-fff">{{user.is_sign==1?'签到':'已签到'}}</text>
 				</view>

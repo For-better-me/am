@@ -1,29 +1,23 @@
 import _http from '../utils/http'
 export default class Order {
-	static list(data, type) {
+	// 10全部， 20待支付，30待消费，40待评价
+	static list(data) {
 		return _http({
 			url:'api/order/getOrderList',
 			method: 'POST',
 			data
 		})
 	}
-	static cancel(data, type,status) {
-		let url = ''
-		if(status == 60){
-			url = 'api/Release/carpoolBeltCancel'
-		}else{
-			url = type == 1 ? 'api/Release/beltCancel' : 'api/Release/hitchCancel'
-		}
+	static cancel(data) {
 		return _http({
-			url,
+			url:'',
 			method: 'POST',
 			data
 		})
 	}
-	static del(data, type) {
-		let url = type == 1 ? 'api/release/delCarpoolBeltInfo' : 'api/release/delCarpoolHitchInfo'
+	static del(data) {
 		return _http({
-			url,
+			url:'',
 			method: 'POST',
 			data
 		})
@@ -42,4 +36,5 @@ export default class Order {
 			data
 		})
 	}
+	
 }

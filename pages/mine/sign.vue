@@ -1,11 +1,11 @@
 <template>
 	<view class="sign" :style="'padding-top:'+barHeight">
 		<view class="sign_day flex-center">
-			当前连续签到：<text class="day_text">5</text> 天
+			当前连续签到：<text class="day_text">{{info.continuity_sign_num}}</text> 天
 		</view>
-		<view class="sign_btn">
+		<view class="sign_btn" @click="sign(info.is_sign)">
 			<image src="../../static/img/icon_rili.png" class="icon_rili"></image>
-			<text class="f-36 color-fff">立即签到</text>
+			<text class="f-36 color-fff">{{info.is_sign==1?'立即签到':'已签到'}}</text>
 		</view>
 		<view class="flex-center flex-lr">
 			<view class="sign_count" v-for="n in 7">
@@ -18,26 +18,47 @@
 		<view class="ri_li mar-t-30">
 			<view class="rili_top"></view>
 			<view class="rili_con">
-				<view class="pad-tb-30 f-28 color-3 align-c">签到日历 2020年04月</view>
+				<view class="pad-tb-30 f-28 color-3 align-c">签到日历 {{info.yaer}}年{{info.month}}月</view>
 				<view class="rili_month border_top">
-					<text class="rili_day" v-for="n in 30">{{n+1}}</text>
-					<text class="rili_day finish">23</text>
-					<text class="rili_day on">32</text>
+					<text class="rili_day" :class="item.is_sign==2?'finish':''" :class="item.day==info.day?'on':''" v-for="item in dateList">{{item.day}}</text>
 				</view>
 			</view>
 		</view>
-		<view class="f-28 color-1 mar-t-30 align-c">每日签到即可获得优惠券一张</view>
+		<view class="f-28 color-1 mar-t-30 align-c">{{info.sign_reward_desc}}</view>
 		<button type="default" class="btn_style mar-t-100">回到首页</button>
 	</view>
 	
 </template>
 
 <script>
+	import MyApis from '@/apis/my.js'
 	export default{
 		name:'sign',
 		data(){
 			return{
 				barHeight: this.$util.getStatusBarHeight(),
+				dateList:[],
+				info:{}
+			}
+		},
+		onLoad() {
+			this.getInfo()
+		},
+		methods:{
+			getInfo(){
+				MyApis.signInfo().then(res=>{
+					this.dateList = res.list
+					this.info = res.info
+				})
+			},
+			sign(flag){
+				if(flag==2){
+					return
+				}
+				MyApis.sign().then(res=>{
+					this.getInfo()
+					this.$util.showToast('签到成功','success')
+				})
 			}
 		}
 	}
@@ -50,7 +71,7 @@
 		padding-right: 30upx;
 		min-height: 100vh;
 		box-sizing: border-box;
-		background: linear-gradient(183deg, rgba(255, 118, 134, 0.72) 28.000000000000004%, rgba(255, 163, 77, 0.25) 75%, rgba(242, 242, 242, 0) 100%);
+		background: linear-gradient(183deg, rgba(255, 118, 134, 0.72) 28%, rgba(255, 163, 77, 0.25) 75%, rgba(242, 242, 242, 0) 100%);
 		.sign_day{
 			font-size: 26upx;
 			color: #DEECFF;

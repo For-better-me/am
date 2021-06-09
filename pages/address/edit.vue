@@ -42,12 +42,10 @@
 					is_default:2,
 					city_name:'天津'
 				},
-				id:null
 			}
 		},
 		onLoad(opt) {
 			if(opt.id){
-				this.id = opt.id
 				this.getInfo()
 				uni.setNavigationBarTitle({
 					title:'编辑地址'
@@ -57,7 +55,7 @@
 		methods:{
 			getInfo(id){
 				AddrApis.info({data}).then(res=>{
-					
+					this.addrInfo = Object.assign({},this.addrInfo,res.data)
 				})
 			},
 			updateDefault(e){
@@ -75,19 +73,19 @@
 			save(){
 				let data = this.addrInfo
 				if(data.name && data.phone && data.address && data.house_number){
-					if(this.id){
+					if(data.id){
 						AddrApis.update()(data).then(res=>{
-							uni.navigateBack()
 							uni.showToast({
 								title:'更新成功'
 							})
+							uni.navigateBack()
 						})
 					}else{
 						AddrApis.add(data).then(res=>{
-							uni.navigateBack()
 							uni.showToast({
 								title:'新增成功'
 							})
+							uni.navigateBack()
 						})
 					}
 				}else{

@@ -41,5 +41,18 @@ export default class My {
 	    })
 	}
 	
+	static signInfo() {
+	    return _http({
+	        url: 'api/sign/getInfo',
+	        method: 'POST',
+	    })
+	}
+	static sign() {
+	    return _http({
+	        url: 'api/Sign/addSign',
+	        method: 'POST',
+	    })
+	}
+	
 	
 }

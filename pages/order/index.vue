@@ -1,23 +1,23 @@
 <template>
 	<view class="order">
 		<view class="order_type">
-			<view class="type_name on">全部</view>
-			<view class="type_name">待支付</view>
-			<view class="type_name">待消费</view>
-			<view class="type_name">待评价</view>
+			<view class="type_name" :class="currentOrder==0?'on':''">全部</view>
+			<view class="type_name" :class="currentOrder==1?'on':''">待支付</view>
+			<view class="type_name" :class="currentOrder==2?'on':''">待消费</view>
+			<view class="type_name" :class="currentOrder==3?'on':''">待评价</view>
 		</view>
-		<swiper :indicator-dots="false" :autoplay="false" class="swiper">
+		<swiper  @change='swiperChange' :current='currentOrder' class="swiper">
 			<swiper-item>
-				<order-list></order-list>
+				<order-list :type='10'></order-list>
 			</swiper-item>
 			<swiper-item>
-				<order-list></order-list>
+				<order-list :type='20'></order-list>
 			</swiper-item>
 			<swiper-item>
-				<order-list></order-list>
+				<order-list :type='30'></order-list>
 			</swiper-item>
 			<swiper-item>
-				<order-list></order-list>
+				<order-list :type='40'></order-list>
 			</swiper-item>
 		</swiper>
 	</view>
@@ -29,7 +29,12 @@
 		name:'order',
 		components:{OrderList},
 		data(){
-			currentOrder:1
+			currentOrder:0
+		},
+		methods:{
+			swiperChange(e){
+				this.currentType = e.detail.current
+			}
 		}
 	}
 </script>

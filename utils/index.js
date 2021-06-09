@@ -165,6 +165,11 @@ function call(phoneNumber){
 		phoneNumber
 	})
 }
+function navigateTo(url){
+	uni.navigateTo({
+		url
+	})
+}
 export default {
 	uploadImg,
 	uploadFile,
@@ -175,5 +180,6 @@ export default {
 	getStatusBarHeight,
 	goShopPage,
 	goTechnicianPage,
-	call
+	call,
+	navigateTo
 }
