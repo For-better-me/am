@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "技师",
+  "usingComponents": {
+    "technician-temp": "/pages/technician/component/technicianTemp",
+    "filter-opts": "/base/filterOpts"
+  }
+}

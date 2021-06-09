@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/address/list",
+    "pages/address/edit",
+    "pages/mine/toBeVip",
+    "pages/mine/coupon",
+    "pages/mine/collection",
+    "pages/mine/index",
+    "pages/service/onCall",
+    "pages/home/index",
+    "pages/service/shopInfo",
+    "pages/service/feature",
+    "pages/technician/info",
+    "pages/service/couponInfo",
+    "pages/service/coupon",
+    "pages/mine/sign",
+    "pages/order/orderValue",
+    "pages/order/detail",
+    "pages/order/index",
+    "pages/service/shopNearby",
+    "pages/service/technicianPretty",
+    "pages/service/technicianNearby",
+    "pages/technician/index",
+    "pages/mine/login"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "按摩",
+    "navigationBarBackgroundColor": "#FF8C69",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "selectedColor": "#FF9163",
+    "color": "#666",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "/static/img/tab1.png",
+        "selectedIconPath": "/static/img/tab11.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/technician/index",
+        "iconPath": "/static/img/tab2.png",
+        "selectedIconPath": "/static/img/tab22.png",
+        "text": "技师"
+      },
+      {
+        "pagePath": "pages/order/index",
+        "iconPath": "/static/img/tab3.png",
+        "selectedIconPath": "/static/img/tab33.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "iconPath": "/static/img/tab4.png",
+        "selectedIconPath": "/static/img/tab44.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "uniStatistics": {
+    "enable": true
+  },
+  "usingComponents": {}
+}

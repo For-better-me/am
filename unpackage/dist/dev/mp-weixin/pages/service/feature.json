@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "手法专区",
+  "usingComponents": {
+    "technician-temp": "/pages/technician/component/technicianTemp"
+  }
+}

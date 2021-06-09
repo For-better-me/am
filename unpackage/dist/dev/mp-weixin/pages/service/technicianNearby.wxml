@@ -1,0 +1,1 @@
+<view class="technician_nearby data-v-70339616"><view class="data-v-70339616"><block wx:for="{{list}}" wx:for-item="info" wx:for-index="__i0__" wx:key="name"><technician-temp vue-id="{{'d380a4a0-1-'+__i0__}}" info="{{info}}" class="data-v-70339616" bind:__l="__l"></technician-temp></block></view></view>

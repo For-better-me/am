@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "颜值专区",
+  "usingComponents": {
+    "filter-opts": "/base/filterOpts",
+    "star": "/base/star"
+  }
+}

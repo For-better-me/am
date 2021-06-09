@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "首页",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "recommend-scroll": "/pages/home/component/recommendIScroll"
+  }
+}

@@ -1,0 +1,94 @@
+.shop_empty_img.data-v-4b7bb168 {
+  width: 508rpx;
+  height: 314rpx;
+  margin: 0 auto;
+  margin-top: 300rpx;
+  margin-bottom: 88rpx;
+  display: block;
+}
+.shop_nearby.data-v-4b7bb168 {
+  position: relative;
+  padding-bottom: 100rpx;
+}
+.shop_nearby.data-v-4b7bb168::after {
+  content: '';
+  display: block;
+  width: 485rpx;
+  position: absolute;
+  right: 30rpx;
+  bottom: 0;
+  border-bottom: #E6E6E6 solid 1rpx;
+}
+.shop_nearby.data-v-4b7bb168:nth-last-of-type(1)::after {
+  content: '';
+  display: none;
+}
+.shop_nearby .poster.data-v-4b7bb168 {
+  width: 180rpx;
+  height: 180rpx;
+}
+.shop_nearby .shop_item.data-v-4b7bb168 {
+  width: 240rpx;
+  height: 76rpx;
+  background: #F2F2F2;
+  border-radius: 5rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.shop_nearby .shop_item .shop_item_poster.data-v-4b7bb168 {
+  width: 76rpx;
+  height: 76rpx;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}
+.shop_nearby .shop_item .shop_item_info.data-v-4b7bb168 {
+  margin-left: 14rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+}
+.shop_nearby .shop_item .shop_item_info > text.data-v-4b7bb168 {
+  width: 140rpx;
+  display: block;
+}
+.shop_nearby .case_detail.data-v-4b7bb168 {
+  width: 490rpx;
+}
+.shop_nearby .fix_bottom.data-v-4b7bb168 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 98rpx;
+  background: #FFFFFF;
+  box-shadow: 0px -1rpx 11rpx 0rpx rgba(26, 25, 26, 0.2);
+  padding: 0 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.shop_nearby .fix_bottom .icon_close.data-v-4b7bb168 {
+  width: 42rpx;
+  height: 42rpx;
+}
+.shop_nearby .fix_bottom .btn.data-v-4b7bb168 {
+  width: 170rpx;
+  height: 60rpx;
+  background: -webkit-linear-gradient(left, #FFA846, #FF7686);
+  background: linear-gradient(90deg, #FFA846, #FF7686);
+  border-radius: 8rpx;
+  font-size: 30rpx;
+  color: #fff;
+  line-height: 60rpx;
+}
+

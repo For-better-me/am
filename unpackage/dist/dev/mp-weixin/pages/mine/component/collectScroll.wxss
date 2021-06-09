@@ -1,0 +1,20 @@
+.collect_scroll.data-v-42770bc2 {
+  height: calc(100vh - 140rpx);
+  overflow: hidden;
+}
+.collect_scroll .collect_item.data-v-42770bc2 {
+  width: 350rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  margin-bottom: 13rpx;
+  float: left;
+  overflow: hidden;
+}
+.collect_scroll .collect_item.data-v-42770bc2:nth-last-of-type(odd) {
+  margin-right: 11rpx;
+}
+.collect_scroll .collect_item .img.data-v-42770bc2 {
+  width: 100%;
+  height: 275rpx;
+}
+

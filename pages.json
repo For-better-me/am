@@ -1,0 +1,185 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/address/list",
+			"style": {
+				"navigationBarTitleText": "我的地址"
+			}
+		},
+		{
+			"path": "pages/address/edit",
+			"style": {
+				"navigationBarTitleText": "新建地址"
+			}
+		},
+		{
+			"path": "pages/mine/toBeVip",
+			"style": {
+				"navigationBarTitleText": "开通会员"
+			}
+		},
+		{
+			"path": "pages/mine/coupon",
+			"style": {
+				"navigationBarTitleText": "我的优惠券"
+			}
+		},
+		{
+			"path": "pages/mine/collection",
+			"style": {
+				"navigationBarTitleText": "我的收藏"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/service/onCall",
+			"style": {
+				"navigationBarTitleText": "上门服务"
+			}
+		},
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/service/shopInfo",
+			"style": {
+				"navigationBarTitleText": "店铺详情"
+			}
+		},
+		{
+			"path": "pages/service/feature",
+			"style": {
+				"navigationBarTitleText": "手法专区"
+			}
+		},
+		{
+			"path": "pages/technician/info",
+			"style": {
+				"navigationBarTitleText": "技师详情"
+			}
+		},
+		{
+			"path": "pages/service/couponInfo",
+			"style": {
+				"navigationBarTitleText": "优惠券详情"
+			}
+		},
+		{
+			"path": "pages/service/coupon",
+			"style": {
+				"navigationBarTitleText": "领券中心"
+			}
+		},
+		{
+			"path": "pages/mine/sign",
+			"style": {
+				"navigationBarTitleText": "签到",
+				"navigationStyle": "custom"
+			}
+		},
+		
+		
+	
+		{
+			"path": "pages/order/orderValue",
+			"style": {
+				"navigationBarTitleText": "评价"
+			}
+		},
+		{
+			"path": "pages/order/detail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "订单"
+			}
+		},
+		
+		
+		{
+			"path": "pages/service/shopNearby",
+			"style": {
+				"navigationBarTitleText": "附近门店"
+			}
+		},
+		{
+			"path": "pages/service/technicianPretty",
+			"style": {
+				"navigationBarTitleText": "颜值专区"
+			}
+		},
+		{
+			"path": "pages/service/technicianNearby",
+			"style": {
+				"navigationBarTitleText": "附近技师"
+			}
+		},
+		{
+			"path": "pages/technician/index",
+			"style": {
+				"navigationBarTitleText": "技师"
+			}
+		},
+		{
+			"path": "pages/mine/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		}
+
+	],
+	"tabBar": {
+		"backgroundColor": "#fff",
+		"borderStyle": "black",
+		"selectedColor": "#FF9163",
+		"color": "#666",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"iconPath": "/static/img/tab1.png",
+				"selectedIconPath": "/static/img/tab11.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/technician/index",
+				"iconPath": "/static/img/tab2.png",
+				"selectedIconPath": "/static/img/tab22.png",
+				"text": "技师"
+			},
+			{
+				"pagePath": "pages/order/index",
+				"iconPath": "/static/img/tab3.png",
+				"selectedIconPath": "/static/img/tab33.png",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"iconPath": "/static/img/tab4.png",
+				"selectedIconPath": "/static/img/tab44.png",
+				"text": "我的"
+			}
+	
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "按摩",
+		"navigationBarBackgroundColor": "#FF8C69",
+		"backgroundColor": "#F8F8F8"
+	}
+}

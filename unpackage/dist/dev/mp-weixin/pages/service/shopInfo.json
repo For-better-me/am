@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "店铺详情",
+  "usingComponents": {
+    "home": "/pages/service/component/shopHome",
+    "case": "/pages/service/component/shopCase",
+    "value": "/pages/service/component/shopValue",
+    "us": "/pages/service/component/shopUs"
+  }
+}

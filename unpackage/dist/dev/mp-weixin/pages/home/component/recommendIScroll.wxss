@@ -1,0 +1,30 @@
+.scroll_h.data-v-b6f1da5a {
+  max-height: 1150rpx;
+}
+.technician.data-v-b6f1da5a {
+  width: 350rpx;
+  min-height: 450rpx;
+  border-radius: 10rpx;
+  margin-bottom: 10rpx;
+  background: #FFFFFF;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+}
+.technician.data-v-b6f1da5a:nth-of-type(odd) {
+  margin-right: 10rpx;
+}
+.technician .img.data-v-b6f1da5a {
+  width: 350rpx;
+  height: 365rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.technician .info.data-v-b6f1da5a {
+  padding: 15rpx;
+}
+.technician .info .icon_good.data-v-b6f1da5a {
+  margin-bottom: 10rpx;
+}
+

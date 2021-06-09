@@ -1,0 +1,1 @@
+<view class="shop_case data-v-21969beb"><block wx:for="{{list}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id"><case-temp vue-id="{{'113d627b-1-'+__i0__}}" project="{{item}}" class="data-v-21969beb" bind:__l="__l"></case-temp></block></view>

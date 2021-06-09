@@ -1,0 +1,26 @@
+.shop_home .recommend_js.data-v-0356a61a {
+  padding: 20rpx 30rpx;
+  background: #fff;
+  font-size: 0;
+}
+.shop_home .recommend_js .js_item.data-v-0356a61a {
+  width: 130rpx;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10rpx;
+}
+.shop_home .recommend_js .js_item.data-v-0356a61a:nth-last-of-type(1) {
+  margin-right: 0;
+}
+.shop_home .recommend_js .js_item .js_pic.data-v-0356a61a {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 6rpx;
+}
+.shop_home .recommend_case .title_style.data-v-0356a61a {
+  padding: 20rpx 30rpx;
+  font-size: 28rpx;
+  color: #1a1a1a;
+  border-bottom: #EBEBEB solid 1rpx;
+}
+

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "case-temp": "/pages/service/component/caseTemp"
+  }
+}

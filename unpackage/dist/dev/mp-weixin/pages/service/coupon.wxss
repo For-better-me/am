@@ -1,0 +1,15 @@
+.no_data.data-v-37fe5d6a {
+  text-align: center;
+  margin-top: 22%;
+}
+.no_data image.data-v-37fe5d6a {
+  width: 507rpx;
+  height: 314rpx;
+}
+.no_data text.data-v-37fe5d6a {
+  font-size: 28rpx;
+  color: #999;
+  display: block;
+  margin-top: 89rpx;
+}
+
